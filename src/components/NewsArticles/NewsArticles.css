@@ -1,0 +1,72 @@
+
+
+  /* Common styles for all screen sizes */
+.news_container {
+    margin-top: 20px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .news_container_feed {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .news_container_components_1 {
+    width: 70%;
+  }
+  
+  .news_container_components_2 {
+    width: 30%;
+    margin-left: 20px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .news_container_components_part_items_button{
+    margin-top: 10%;
+    padding: 10%;
+  }
+
+  .news_container_components_part_items {
+    margin-bottom: 10px;
+   
+    
+  }
+  
+  /* Styles for screens with a minimum width of 1024px */
+  @media (min-width: 1024px) {
+    h1 {
+      font-size: 28px;
+    }
+  }
+  
+  /* Styles for screens with a minimum width of 768px */
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 26px;
+    }
+  }
+  
+  /* Styles for screens with a width less than 768px */
+  @media (max-width: 767px) {
+    h1 {
+      font-size: 22px;
+    }
+    
+    .news_container_feed {
+      flex-direction: column;
+    }
+  
+    .news_container_components_2 {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+  
